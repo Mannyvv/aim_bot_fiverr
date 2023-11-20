@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .red-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            animation: moveLeftRight 5s linear infinite;
+        }
+
+        @keyframes moveLeftRight {
+            0%, 100% {
+                left: 0;
+            }
+            50% {
+                left: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box"></div>
+</body>
+</html>
